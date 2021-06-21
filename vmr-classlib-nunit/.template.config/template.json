@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "",
+    "classifications": [ "Common", "Library", "Test" ], 
+    "name": "VMR Class Library",
+    "identity": "VmrClassLib",
+    "groupIdentity":"VmrClassLib",
+    "shortName": "vmr-classlib",
+    "tags": {
+      "language": "C#",
+      "type":"project"
+    },
+    "sourceName": "VmrClassLib",
+    "preferNameDirectory": true,
+    "symbols":{
+      "includetest": {
+          "type": "parameter",
+          "datatype": "bool",
+          "defaultValue": "true"
+      }
+    },
+    "sources":[{
+      "modifiers": [{
+        "condition": "(!includetest)",
+        "exclude": [ "VmrClassLib.Tests/**/*"]
+        }
+      ]
+    }]
+  }
