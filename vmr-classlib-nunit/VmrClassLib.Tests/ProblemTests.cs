@@ -10,7 +10,7 @@ namespace VmrClassLib.Tests
         }
 
         [Test]
-        public void Test1()
+        public void SolutionTest()
         {
             Assert.True(Problem.Solution());
         }
